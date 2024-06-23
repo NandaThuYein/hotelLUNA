@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Product Sans;
+    scroll-behavior: smooth;
+    outline: none;
+    
+}
+.max-width{
+    padding: 20px 80px;
+    margin: auto;
+}
+@font-face {
+    font-family: "Tosca";
+    src: url("../Fonts/Tosca\ Beauty\ Demo.otf");
+  }
+ @font-face {
+    font-family: "Beauty";
+    src: url("../Fonts/Beauty\ Swing.otf");
+  }
+body{
+    background-color: #ffff;
+    position: relative;
+    height: 100vh;
+    
+}
+button{
+    padding: 20px 40px;
+    background: none;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #ffff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.3mm;
+    
+  }
+  button:hover{
+    background-color: rgb(0, 71, 85, 0.75);
+   }
+/* header>>>>>>>>>>>>>>> */
+
+.title h1{
+    color: #004755;
+    font-family: Beauty;
+    font-size: 60px;
+    font-weight: lighter;
+}
+.title span{
+    color: #004755;
+    font-family:  Beauty;
+    font-size: 40px;
+}
+.bgpng img{
+    position: absolute;
+    width: 225px;
+    height: 150px;
+    z-index: 0;
+    right: 0;
+    bottom: 20px;
+    position: fixed;
+}
+.info{
+    position: absolute;
+    display: flex;
+    left: 0;
+    width: 100%;
+}
+
+
+/* input>>>>>>>>>>>>>>>>>>>> */
+.wrapper .input-data{
+    height: 40px;
+    width: 350px;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .wrapper .input-data input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    border-bottom: 2px solid silver;
+  }
+  .input-data input:focus ~ label,
+  .input-data input:valid ~ label{
+    transform: translateY(-20px);
+    font-size: 16px;
+    color: #004755;
+  }
+  .wrapper .input-data label{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: grey;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  .input-data .underline{
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+  }
+  .input-data .underline:before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #004755;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+  }
+  .input-data input:focus ~ .underline:before,
+  .input-data input:valid ~ .underline:before{
+    transform: scaleX(1);
+  }
+  .comment{
+      position: relative;
+      margin-top: 50px;
+  }
+  .comment label{
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: #004755;
+    pointer-events: none;
+  }
+  .comment textarea{
+    font-size: 16px;
+    border: 2px solid grey;
+    padding: 10px;
+  }
+  .comment ::placeholder{
+    color: rgb(0, 71, 85, 0.25);
+  }
+  /* receipt>>>>>>>>>> */
+  .top{
+    margin-top: 5px;
+  }
+  .receipt{
+    background-color: #F1FAFF;
+    border: 8px solid #004755;
+    border-radius: 10px;
+    padding: 20px 40px;
+    margin-left:150px;
+    width: 50%;
+  }
+  .receipt .date{
+    display: flex;
+    align-items: center;
+    color: #ffff;
+  }
+  .line{
+    background-color: #004755;
+    height: 8px;
+    width: 300px; 
+  }
+  .checkin , .checkout{
+    background-color: #004755;
+    padding: 15px 25px;
+    border-radius: 5px;
+  }
+  .roomtotal{
+    position: relative;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .roomtotal content{
+    display: flex;
+    flex-direction: column;
+  }
+  .subtotal{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .fakeimg{
+    width: 120px;
+    height: 100px;
+    background-color: #004755;
+    margin-right: 15px;
+  }
+  .roomtotal i{
+    font-size: 16px;
+    margin-right: 30px;
+  }
+  .reservationtotal{
+    margin-top: 20px;
+    display: flex;
+    background-color: #004755;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .reservationtotal h1{
+    color: rgb(0, 255, 195);
+  }
+  

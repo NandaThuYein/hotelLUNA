@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header{
+  background-color: grey;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .title{
+  margin: 10px 10px 10px 30px;
+  padding: 10px;
+  text-decoration: underline;
+}
+
+.header #menuLoginTime{
+  margin: 20px 20px 0 30px;
+}
+
+.sidebar{
+
+  position: fixed;
+  height: 87%;
+  width: 250px;
+  background: #0A2558;
+  transition: all 0.5s ease;
+}
+.sidebar.active{
+  width: 60px;
+}
+.sidebar .logo-details{
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar .logo-details i{
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+  min-width: 60px;
+  text-align: center
+}
+.sidebar .logo-details .logo_name{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.sidebar .nav-links{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+
+.sidebar .nav-links li{
+  position: relative;
+  list-style: none;
+  height: 50px;
+  margin-right: 30px;
+}
+
+.sidebar .nav-links li a{
+  height: 100%;
+  width: 100% ;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+
+.sidebar .nav-links li a.active{
+  background:skyblue;
+}
+
+.sidebar .nav-links li a:hover{
+  background: greenyellow;
+  text-decoration: underline;
+}
+
+
+.sidebar .nav-links .log_out{
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+}
+
+
+.sidebar .nav-links li a .links_name{
+  color: #00ff;
+  font-size: 20px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.sidebar .dropdown {
+  margin-left: 30px;
+}
+
+table.tableForm{
+    border-collapse: collapse;
+    border: 1px solid brown;
+}
+
+table.tableForm .label{
+    background-color: lightskyblue;
+    border: 1px solid brown;
+    padding: 5px;
+}
+
+table.resultTable{
+  border-collapse:collapse;
+  /*margin-bottom:4px;
+  font-size:10pt;*/
+  width: 80%;
+  text-align: center;
+  vertical-align: center;
+  border: 1px solid black;
+  height: auto;
+}
+
+table.resultTable th{
+  border: 1px solid black;
+}
+table.resultTable td{
+  border: 1px solid black;
+  content-align:center;
+}
+
+table.cumupdate td{
+  box-sizing: border-box;
+  border: 2px solid brown;
+  padding: 15px;
+}
+
+table.cumupdate input{
+  padding: 5px;
+}
+
+table.addroom td{
+   box-sizing: border-box;
+  border: 2px solid brown;
+  padding: 15px;
+}
+
+table.addroom input{
+  background-color: grey;
+  width: auto;
+  height: 40px;
+}
+table.resultTable1{
+  border-collapse:collapse;
+  width: 70%;
+  margin-left: 100px;
+  text-align: center;
+  vertical-align: center;
+  border: 4px solid #1a4488;
+  height: auto;
+  color:white;
+}
+
+table.resultTable1 .button:hover{
+  background-color: red;
+  color: white;
+}
+
+table.resultTable1 td{
+  border: 4px solid #1a4488;
+  font-size:20px;
+  /*content-align:center;*/
+}
+
+table.adminreg input{
+  background-color:snow ;
+}
+
+table.adminreg .label{
+	color:white;
+	background-color:#1a4488;
+	padding:5px;
+}
+
+.search_form{
+	margin-left:20px;
+}
+
+.button{
+  background-color: sienna;
+}
+.button:hover{
+   background-color: red;
+  color: white;
+}
+
+
+.roomsearch{
+  width: auto;
+  padding: 10px;
+}
+
+.footer{
+  margin-left: 200px;
+}

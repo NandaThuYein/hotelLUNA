@@ -1,0 +1,157 @@
+*{
+	box-sizing: border-box;
+	cursor: pointer;
+
+}
+
+body{
+	color: #0A2558;
+	background-color: silver;
+}
+
+.img{
+	margin-left: 80px;
+	margin-top: 60px;
+	border-top-left-radius: 100px;
+	background-image: url('../Image/login.jpg');
+	background-repeat: no-repeat;
+}
+
+.img h3{
+	color: snow;
+	letter-spacing: 2vh;
+}
+
+#header{
+		letter-spacing: 1vh;
+		font-size: 40px;
+		margin-top: 20px;
+		margin-left: 100px;
+
+		}
+
+#container {
+
+	margin-left: 530px;
+}
+
+#container h1{
+	color:#0A2558;
+	font-size: 30px;
+	letter-spacing: 1vh;
+}
+#container h2{
+	margin-left:70px;
+	margin-top: 10px;
+	font-size: 40px;
+	letter-spacing: 1vh;
+}
+
+.admintb {
+	border: 3px solid #0A2558;	
+	border-radius: 10px;
+	border-width:1vh;
+}
+
+.admintb #id,#psw,#password{
+	text-align:center;
+}
+
+.admintb #id{
+	border-radius:10px;
+}
+
+
+.admintb #password{
+	border-radius:10px;
+}
+
+.admintb #sub,#register {
+	width:20vh;
+	height: 5vh;
+	border-radius: 10px;	
+
+	
+}
+
+#sub:hover{
+	background-color: #0A2558;
+	border-radius: 10px;
+	color: snow;
+	font-size: 15px;
+
+}
+
+#register:hover{
+	background-color: #0A2558;
+	border-radius: 10px;
+	color: snow;
+	font-size: 15px;
+}
+
+
+/*For Admin Register.jsp*/
+
+.tbform .register{
+	background-image: url('../img/login.jpg');
+	background-repeat: no-repeat;
+}
+.admreg #tt{
+	font-size: 30px;
+	text-align: center;
+	letter-spacing: 1vh;
+}
+
+.tbform {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+
+	margin: 50px;
+}
+
+.tbform .register{
+	color: black;
+	display: flex;
+	justify-content: center;
+	border: 2px solid white;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.tbform td{
+	font-size: 19px;
+	padding: 9px;
+}
+
+.register #input{
+	width: 100%;
+	height:5vh;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.register .button{
+	display: flex;
+	justify-content: right;
+
+}
+
+.register .btn{
+	color: #0A2558;
+	padding: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+
+	border-radius: 15px;
+	font-size: 15px;
+}
+
+.register .btn:hover{
+
+	background-color:#0A2558 ;
+	color: snow;
+	font-style: italic;
+}
+
+

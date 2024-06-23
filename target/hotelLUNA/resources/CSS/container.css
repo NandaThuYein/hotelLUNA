@@ -1,0 +1,27 @@
+
+
+.container .main_contents .contents{
+  display: block;
+  padding-left: 200px;
+
+}
+
+.container .tableForm .tb1button .button{
+  margin-top: 10px;
+}
+
+
+.main_contents{
+  background: white;
+  overflow: hidden;
+  min-height:500px;
+  height:auto !important;
+  height:550px;
+  padding-top:15px;
+  width: 1241px;
+}
+
+.main_contents #list{
+  padding-left: 200px;
+}
+

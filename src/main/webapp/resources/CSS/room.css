@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Product Sans;
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: "Tosca";
+    src: url("../Fonts/Tosca\ Beauty\ Demo.otf");
+  }
+ @font-face {
+    font-family: "Beauty";
+    src: url("../Fonts/Beauty\ Swing.otf");
+  }
+body{
+    background-color: #1E2225;
+}
+/* header section start >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.max-width{
+    padding: 0 80px;
+    margin: auto;
+    
+}
+.header{
+    height: 50vh;
+    background-color: #003945;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.title{
+    text-align: center;
+}
+.header h1{
+    font-family: Beauty;
+    font-size: 60px;
+    font-weight: lighter;
+    line-height: 100px;
+}
+.header h2{
+    font-family: Product Sans;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.header h3{
+    font-family: Product Sans;
+    font-size: 16px;
+    font-weight: lighter;
+    letter-spacing: 5mm;
+    font-family: Product Sans;
+
+    margin-left: 5mm;
+    
+}
+.header span{
+    font-family:  Beauty;
+    font-size: 60px;
+}
+.star img{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+/* book section start >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+  
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+  }
+  .book{
+      color: #ffff;
+      display: flex;
+      align-items: center;
+      height:7.5vh;
+  }
+  .book .input{
+    background-color:#004755;
+    padding: 15px 25px 20px 20px;
+  }
+  .book .search{
+      background: #004755;
+      padding: 20px;
+     /* width: 35%;*/
+      transition: all 0.1s ease-in-out;
+      cursor: pointer;
+  }
+  .book .search:hover{
+    background: #00819B;
+    /*padding: 20px;
+    width: 18%;*/
+}
+  input{
+      width: 100%;
+      padding: 7px;
+      border: 2px solid rgba(204, 204, 204, 1);
+      outline: none;
+      background: #004755;
+      color: #ffff;
+      margin-top: 10px;
+  }
+  ::placeholder{
+      color: #ffff;
+  }
+  .book .search input{
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 18px;
+    color: #fff;
+  }
+  /* room card section start >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+  .room{
+    padding: 0 80px;
+    margin-top: 30px;
+    display: flex;
+  }
+/*   #button{
+    padding: 20px 40px;
+    background: none;
+    outline: none;
+    border: 2px solid #1E2225;
+    border-radius: 10px;
+    color: #004755;
+    cursor: pointer;
+    background: rgb(0, 255, 195);
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    position: fixed;
+    right: 40px;
+    bottom: 80px;
+  }
+  #button:hover{
+   background-color: rgb(0, 255, 195, 0.5);
+  } */
+  .card{ 
+     display: flex;
+     width: 80%;
+     margin-bottom: 50px;
+  }
+  .cardimg img{
+    width: 300px;
+    height: 300px;
+  }
+  /* content section start >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  .content{
+      color: #ccc;
+      font-weight: lighter;
+      margin-left: 60px;
+      position: relative;
+  }
+  .content h1{
+      font-size: 40px;
+      font-family: Beauty;
+      font-weight: lighter;
+      margin-bottom: 20px;
+      color: #ffff; 
+  }
+  .content .aboutroom {
+    margin: 30px 0px;
+    font-size: 16px;
+  }
+  .content .price{
+      font-size: 15px;
+      font-weight: lighter;
+      color: #ffff;
+  }
+  .content p{
+      font-size: 18px;
+      font-weight: lighter;
+      color: #ccc;
+      
+  }
+  .content .price span{
+    color: #ccc;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  .content .itt{
+    display: inline-flex;
+  }
+  .itt .icon{
+    margin: 0 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+  }
+  .itt .icon span{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    display: block;
+    background-color: #003945;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 2;
+    color: #fff;
+  }
+  .itt .icon span i{
+    font-size: 18px;
+    line-height: 40px;
+  }
+  .itt .icon .tooltip{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    background: #003945;
+    font-size: 16px;
+    border-radius: 25px;
+    padding: 10px 18px;
+    color: #fff;
+    opacity: 0;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .itt .icon .tooltip:before{
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 13px;
+    background: #003945;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);
+  }
+  .itt .icon:hover .tooltip{
+    top: -50px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+.selectbox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffff;
+  width: 150px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+}
+.selectbox input{
+  font-size: 18px;
+  width: 110px;
+  font-weight: bold;
+  outline: none;
+  background-color: #ffff;
+  color: #004755;
+  border: none;
+}
+.selectbox ::placeholder{
+  color: #004755;
+}
+
+  /* total section start >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  
+
+
+
